@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Grayish-blue: hsl(237, 18%, 59%);
+    --Soft-red: hsl(345, 95%, 68%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-desaturated-blue: hsl(236, 21%, 26%);
+    --Very-dark-blue: hsl(235, 16%, 14%);
+    --Very-dark--blue: hsl(234, 17%, 12%);
+}
+.stars{
+    position: absolute;
+}
+.hills{
+    position: absolute;
+    bottom: 0;
+}
+body{
+    font-family: "Red Hat Text", sans-serif;
+    background-color: var(--Very-dark--blue);
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.countdown{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.container h1{
+    color: var(--White);
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+.countdown h3{
+    color: var(--Grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.countdown p{
+    padding: 20px;
+    background-color: var(--Dark-desaturated-blue);
+    border-radius: 5px;
+    color: var(--Soft-red);
+    font-size: 46px;
+}
+
+.countdown div{
+    margin: 10px;
+}
+
+.socials{
+    position: absolute;
+    bottom: 30px;
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.socials ul{
+    display: flex;
+    gap: 20px;
+}
+
+@media (min-width:1440px){
+    .stars img,
+    .hills img{
+        width: 1920px;
+    }
+}
